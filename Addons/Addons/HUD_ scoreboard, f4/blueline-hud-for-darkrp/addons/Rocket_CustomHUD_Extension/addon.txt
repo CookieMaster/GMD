@@ -1,0 +1,11 @@
+"AddonInfo"
+{
+	"name"				"Custom HUD for DarkRP : Extension"
+	"version"			"1.5"
+	"up_date"			""
+	"author_name"			"RocketMania"
+	"author_email"			"jmh3268@gmail.com"
+	"author_url"			""
+	"info"				"if you have question. contact me. my steam id is mupama"
+	"override"			"0"
+}

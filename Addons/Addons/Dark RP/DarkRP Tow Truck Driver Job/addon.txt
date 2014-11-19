@@ -1,0 +1,10 @@
+"AddonInfo"
+{
+	"name"		"DarkRP Tow Truck Driver Job"
+	"version"	"1.0"
+	"up_date"	"2013"
+	"author_name"	"Crap-Head"
+	"author_email"	"sebastian7307@hotmail.com"
+	"author_url"	"None"
+	"info"		"An advanced tow truck driver job for DarkRP."
+}

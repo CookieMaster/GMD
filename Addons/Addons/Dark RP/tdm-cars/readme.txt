@@ -1,0 +1,1 @@
+1.Simply just paste them in boonpc/lua/shop/ overwrite the current one if.

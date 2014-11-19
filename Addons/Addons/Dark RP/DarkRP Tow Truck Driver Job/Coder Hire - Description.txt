@@ -1,0 +1,96 @@
+##DarkRP Support##
+DarkRP 2.4.3 ![Alt text](http://coderhire.com/uploads/ratings/991eb9bb1af4b20ea9f8a654cf571a59.png)  
+DarkRP 2.5.0 ![Alt text](http://coderhire.com/uploads/ratings/991eb9bb1af4b20ea9f8a654cf571a59.png)  
+
+Other custom versions of DarkRP are not supported, and don't count on my support if you're using a custom version of DarkRP with modified core features.
+
+##Description##
+This is an advanced DarkRP job. A job that actually has a purpose.  
+The tow truck driver (or tower) can tow vehicles by hooking their nose to the back of their tow truck, then drive it around.  
+When the tower has towed a vehicle, he or she can place a fine on the vehicle.  
+When the fine is placed, the vehicles owner will be notified, and the vehicles location will be marked on the owners screen.  
+When the owner tries to get into the towed vehicle, he or she will be ejected, and a fine menu will open.  
+Once the fine is paid, the car is "unlocked" and the text disappears, and the owner can drive it away.  
+
+##Features##
+- Tower job.  
+- Tow truck vehicle for towers.  
+- Realistically tow vehicles.  
+- Place fines on vehicles.  
+- Show distance and fine price on screen for vehicle owner.  
+- Plenty of configs.  
+- And much more!
+
+##Installation##
+This addon supports both DarkRP 2.4.3 and DarkRP 2.5.0.  
+**You will find the version for DarkRP 2.4.3 here:**  
+DarkRP Tow Truck Driver Job/Tow 2.4.3/DarkRP Tow Truck Driver Job  
+Extract the last DDarkRP Tow Truck Driver Job to your addons.  
+
+**You will find the version for DarkRP 2.5.0 here:**  
+DarkRP Tow Truck Driver Job/Tow 2.5.0/DarkRP Tow Truck Driver Job  
+Extract the last DarkRP Tow Truck Driver Job to your addons.    
+
+Once you've done that, you will want to put up the location for the tow npc, and the place for the tow truck to spawn.  
+
+To set the position of the tow npc, go to the location you want it to be in, and type towtrucknpc\_setpos.
+To activate this location, your server requires a restart.
+
+To set the position of the tow truck spawn, go to the location you want it to be in, and type towtruck\_setpos.
+This is activated instantly.
+
+Remember to aim the direction you want the npc and truck to spawn in. Your angle matters!
+
+You must be an administrator on your server to perform these actions.  
+
+##Content##
+The car used in this addon is Sickness Models.  
+
+To download Sickness Models, install this with Tortoise SVN.  
+Link to Tortoise SVN: http://tortoisesvn.net/downloads.html  
+Link to Sickness Models: http://subversion.assembla.com/svn/SicknessModel  
+
+There is no content included in the download. It is up to you to put Sickness Models on your FastDL!  
+Please read the "README TO FIX MISSING SOUNDS!!!!!" in Sickness Models to install sounds and vehicle scripts.  
+
+##Customizing##
+To customize the addons settings, go to DarkRP Tow Truck Driver Job/lua/autorun/tow_config.lua.  
+In the top of the file you can customize the settings shown below.  
+
+TOWTRUCK\_VehicleModel = "models/sickness/towtruckdr.mdl" -- The model of the tow truck. Defaults to the tow truck from sickness models.  
+TOWTRUCK\_MaxTrucks = 2 -- Maximum amount of tow trucks allowed at one time. [Default = 2]  
+TOWTRUCK\_VehicleScript = "scripts/vehicles/tow.txt" -- The vehicle script for the tow truck. Defaults to the one from sickness models.  
+TOWTRUCK\_Health = 100 -- The health of the tow truck. This only really matters if you have a vehicle damage script [Default = 100]  
+TOWTRUCK\_NPCModel = "models/monk.mdl" -- The model of the npc to retrieve a tow truck.  
+
+TOW\_MaxFine = 500 -- The maximum fine a tower can put on a vehicle. [Default = 500]  
+
+##Additional##
+If you own my [Government Vehicle Station](http://coderhire.com/scripts/view/932) script, you can intergrate the tow truck into that script!  
+To do so, just add the tow truck to the government station file (below is the code), and set the position of the tow truck npc out of your map so nobody ever access that.  
+As in, fly far outside the map, and type towtrucknpc\_setpos.  
+
+Here is the code for the tow truck in my government station script:  
+GovStation\_Vehicles["GOV\_TOWTRUCK"] = {  
+	Name = "Tow Truck",  
+	Description = "A tow truck used to tow vehicles.",  
+	Model = "models/sickness/towtruckdr.mdl",  
+	Script = "scripts/vehicles/tow.txt",  
+	Health = 100,  
+	VehicleSkin = 0,  
+	AllowedTeamNames = {  
+		"Tower",  
+	},  
+	AllowedTeams = {  
+		TEAM_TOWER,  
+	},  
+}  
+
+Insert that code in the govstation\_config.lua file, next to the other government vehicles!  
+
+##Errors & Support##
+If you find any problems with the script, please PM me with details of the situation and a copypaste of the error in console. Additionally, i rarely give additional support for my scripts. If there is a general error with the script, an error that you can prove happens, and is my fault. Send me a PM here on CoderHire. We'll figure it out there, and perhaps a chat on Steam after I've responded to your PM. I am also not interested in modifying you a custom version of the addon. Also not upon payment. Sorry!
+
+Conflicting addons is not to be said if I will support that or not. This is something I will decide upon confrontation about a conflicting addon. If you have some sort of proof that an addon is conflicting with my addon, please send me a PM with the details you might have.
+
+Thank you!

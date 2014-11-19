@@ -1,0 +1,1 @@
+resource.AddFile("materials/rocketmania/darkrphud/grad_bg_4_1_white.png")
