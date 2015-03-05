@@ -1,0 +1,298 @@
+TEAM_HOBOLORD = DarkRP.createJob("Hobo Lord", {
+        color = Color(0, 51, 51, 255),
+        model = "models/player/zombie_soldier.mdl",
+        description = [[You are the hobo lord you do not earn any money but you are the king of the sewers and you must protect the sewers at all cost]],
+        weapons = {},
+        command = "hobolord",
+        max = 1,
+        salary = 0,
+        admin = 0,
+        vote = false,
+        customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer", "vip" end
+})
+
+TEAM_THIEFINLAW = DarkRP.createJob("Thief In Law", {
+        color = Color(255, 0, 0, 255),
+        model = "models/player/breen.mdl",
+        description = [[You are a their in law you may change your job title to any rp job listed in the f4 menu and rp as that job]],
+        weapons = {"arrest_stick","stunstick","unarrest_stick"},
+        command = "thiefinlaw",
+        max = 10,
+        salary = 1000,
+        admin = 0,
+        vote = false,
+        customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer" end
+})
+
+TEAM_HUNTER = DarkRP.createJob("Hunter", {
+        color = Color(51, 51, 51, 255),
+        model = "models/jessev92/player/l4d/m9-hunter.mdl",
+        description = [[Here you are a hunter when people request a person dead you type /advert Contract Accepted(C.A) when the person is dead you must do /advert Contract Complete(C.C)]],
+        weapons = {""},
+        command = "hunter",
+        max = 2,
+        salary = 80,
+        admin = 0,
+        vote = true,
+        -- Insert Custom Check Here
+})
+  
+TEAM_ROBOCOP = DarkRP.createJob("Robo Cop", {
+        color = Color(102, 102, 102, 255),
+        model = "models/jessev92/player/hl2/ConceptBine.mdl",
+        description = [[You are robo cop you defend the city at all cost]],
+        weapons = {"m9k_ak74","m9k_ak47","unarrest_stick","arrest_stick","stunstick"},
+        command = "robocop",
+        max = 1,
+        salary = 150,
+        admin = 0,
+        vote = true,
+        -- Insert Custom Check Here
+})
+  
+TEAM_PROTHIEF = DarkRP.createJob("Pro Thief", {
+        color = Color(0, 0, 0, 255),
+        model = "models/player/guerilla.mdl",
+        description = [[Here you are the pro thief you are allowed to base and raid but now you have extra materials to steal all theitems you desire]],
+        weapons = {"m9k_185","m9k_m14sp","m9k_m16a4_acog","unarrest_stck","med_kit","lockpick"},
+        command = "prothief",
+        max = 5,
+        salary = 200,
+        admin = 0,
+        vote = false,
+        customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer", "vip" end
+})
+
+TEAM_ADMIN = DarkRP.createJob("Admin On Duty", {
+        color = Color(255, 51, 0, 255),
+        model = "models/player/combine_super_soldier.mdl",
+        description = [[Enforce the rules and respond to calls.]],
+        weapons = {""},
+        command = "admin",
+        max = 10,
+        salary = 200000,
+        admin = 1,
+        vote = false,
+        -- Insert Custom Check Here
+})
+
+TEAM_SINGER = DarkRP.createJob("Singer", {
+        color = Color(51, 102, 204, 255),
+        model = "models/player/alyx.mdl",
+        description = [[ you are a singer so sing/play music to earn money.]],
+        weapons = {""},
+        command = "singer",
+        max = 2,
+        salary = 75,
+        admin = 0,
+        vote = false,
+        -- Insert Custom Check Here
+})
+ 
+TEAM_DRUGDEALER = DarkRP.createJob("Drug Dealer", {
+        color = Color(0, 255, 255, 255),
+        model = "models/player/eli.mdl",
+        description = [[Sell drugs for money.]],
+        weapons = {""},
+        command = "drug",
+        max = 2,
+        salary = 60,
+        admin = 0,
+        vote = false,
+        -- Insert Custom Check Here
+})
+  
+TEAM_SWATCOMMANDER = DarkRP.createJob("Swat Commander", {
+        color = Color(0, 0, 153, 255),
+        model = "models/player/urban.mdl",
+        description = [[ll SWATS must follow your orders as you have power over civil protection too.]],
+        weapons = {"unarrest_stick","door_ram","arrest_stick","stunstick","m9k_ak74","m9k_an94"},
+        command = "swatcommander",
+        max = 1,
+        salary = 150,
+        admin = 0,
+        vote = true,
+        -- Insert Custom Check Here
+})
+
+TEAM_STRIPPER = DarkRP.createJob("Stripper", {
+        color = Color(102, 0, 255, 255),
+        model = "models/player/mossman.mdl",
+        description = [[Strip for money and put on a show for that lovely gentleman .]],
+        weapons = {""},
+        command = "stripper",
+        max = 2,
+        salary = 50,
+        admin = 0,
+        vote = false,
+        -- Insert Custom Check Here
+})
+  
+TEAM_SWAT = DarkRP.createJob("SWAT", {
+        color = Color(0, 0, 255, 255),
+        model = "models/player/riot.mdl",
+        description = [[You are a swat you must enforce all the laws and obey your boss.]],
+        weapons = {"arrest_stick","unarrest_stick","stun_stick","door_ram","m9k_an94","m9k_auga3"},
+        command = "swat",
+        max = 4,
+        salary = 150,
+        admin = 0,
+        vote = true,
+        -- Insert Custom Check Here
+})
+
+TEAM_BODYGUARD = DarkRP.createJob("Body Guard", {
+        color = Color(51, 102, 102, 25),
+        model = "models/player/odessa.mdl",
+        description = [[Here you are a body guard when you are paid to protect someone you must protect them at all cost until you die.]],
+        weapons = {"m9k_an94","m9k_ak74","m9k_ammo_pistol"},
+        command = "guard",
+        max = 3,
+        salary = 85,
+        admin = 0,
+        vote = false,
+        -- Insert Custom Check Here
+})
+
+TEAM_HITLER = DarkRP.createJob("Hitler", {
+        color = Color(102, 0, 51, 255),
+        model = "models/Hitler.mdl",
+        description = [[Here you are Hitler you lead the German army with pride they must follow all your commands.]],
+        weapons = {""},
+        command = "hitler",
+        max = 1,
+        salary = 120,
+        admin = 0,
+        vote = true,
+        customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer", "vip" end
+})
+  
+TEAM_USAARMY = DarkRP.createJob("USA Army", {
+        color = Color(51, 0, 51, 255),
+        model = "Models/CODMW2/T_CODMW2H.mdl",
+        description = [[Here you are USA Army and you must work for your country at all times.]],
+        weapons = {"stunstick","m9k_famas"},
+        command = "usaarmy",
+        max = 10,
+        salary = 90,
+        admin = 0,
+        vote = false,
+        -- Insert Custom Check Here
+})
+  
+TEAM_USAARMYLEADER = DarkRP.createJob("USA Army Leader", {
+        color = Color(0, 0, 102, 255),
+        model = "Models/COD players/opfor5.mdl",
+        description = [[You are the USA Army leader all of the army must follow your commands at all times.]],
+        weapons = {"stunstick","m9k_famas","m9k_ak47"},
+        command = "usaarmyleader",
+        max = 1,
+        salary = 120,
+        admin = 0,
+        vote = true,
+        customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer", "vip" end
+})
+  
+TEAM_GERMANARMY = DarkRP.createJob("German Army", {
+        color = Color(255, 0, 0, 255),
+        model = "Models/mw2guy/RUS/soldier_e.mdl",
+        description = [[Here you are the German army and you work for Hitler you must follow his orders.]],
+        weapons = {"m9k_ak47","stunstick"},
+        command = "germanarmy",
+        max = 10,
+        salary = 90,
+        admin = 0,
+        vote = false,
+        -- Insert Custom Check Here
+})
+
+TEAM_SPIDERMAN = DarkRP.createJob("Spider Man", {
+        color = Color(132, 0, 0, 255),
+        model = "models/player/tasm2spider.mdl",
+		description = [[You are spider man you must protect the city with police.]],
+		weapons = {"spiderman's_swep","unarrest_stick","arrest_stick","stunstick"},
+		command = "spiderman",
+		max = 2,
+		salary = 120,
+		admin = 0,
+		vote = true,
+		customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer" end
+})
+
+TEAM_TERRORIST = DarkRP.createJob("Terrorist", {
+        color = Color(132, 0, 0, 255),
+		model = "Models/CODMW2/CODMW2HE.mdl",
+		description = [[You are a terrorist.  A Terrorists job is to do two things, to do whatever your leader says and cause choas! Also make sure that you stick together after all you are a team.]],  
+		weapons = {"unarrest_stick","m9k_185","m9k_famas","m9k_ammo_pistol"},
+		command = "terrorist",
+		max = 6,
+		salary = 79,
+		admin = 0,
+		vote = true,
+		-- Insert Custom Check Here
+ })
+ 
+ TEAM_OSAMABINLADEN = DarkRP.createJob("Osama Bin Laden", {
+        color = Color(132, 0, 0, 255),
+		model = "models/jessev92/player/misc/osamabl1.mdl",
+		description = [[You are Osama you only desire to kill people and destroy america with your army of Terrorist.]],
+		weapons = {""},
+		command = "osamabinladen",
+		max = 1,
+		salary = 89,
+		admin = 0,
+		vote = true,
+        customCheck = function(ply) return ply:GetNWString("usergroup") == "owner", "supervip", "co-owner", "forummod", "admin", "superadmin", "enforcer" end
+})
+
+TEAM_BATMAN = DarkRP.createJob("Batman", {
+        color = Color(123, 0, 0, 0),
+		model = "models/player/superheroes/batman.mdl",
+		description = [[You are batman and you fight crime with your superhero firends.]],
+		weapons = {"spiderman's_swep","unarrest_stick","arrest_stick","stunstick"},
+		command = "batman",
+		max = 1,
+		salary = 99,
+		admin = 0,
+		vote = true,
+		-- Insert Custom Check Here
+})
+
+TEAM_SUPERMAN = DarkRP.createJob("Superman", {
+        color = Color(123, 0, 0, 255),
+		model = "models/player/superheroes/superman.mdl",
+		description = [[You are superman and you fight crime with your superhero firends.]],
+		weapons = {"spiderman's_swep","unarrest_stick","arrest_stick","stunstick"},
+		command = "superman",
+		max = 1,
+		salary = 99,
+		admin = 0,
+		vote = true,
+		-- Insert Custom Check Here 
+})
+
+TEAM_GREENLANTERN = DarkRP.createJob("Green Lantern", {
+        color = Color(132, 23, 0, 123),
+		model = "models/player/superheroes/greenlantern.mdl",
+		description = [[You are Green lantern and you fight crime with your superhero firends.]],
+		weapons = {"spiderman's_swep","unarrest_stick","arrest_stick","stunstick"},
+		command = "greenlantern",
+		max = 1,
+		salary = 99,
+		admin = 0,
+		vote = true,
+		-- Insert Custom Check Here
+})
+
+TEAM_FLASH = DarkRP.createJob("Flash", {
+        color = Color(124, 0, 0, 255),
+		model = "models/player/superheroes/flash.mdl",
+		description = [[You are Flash and you fight crime with your superhero firends.]],
+		weapons = {"spiderman's_swep","unarrest_stick","arrest_stick","stunstick"},
+		command = "flash",
+		max = 1,
+		salary = 99,
+		admin = 0,
+		vote = true,
+		-- Insert Custom Check Here
+})
